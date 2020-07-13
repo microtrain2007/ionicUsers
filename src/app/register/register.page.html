@@ -5,16 +5,16 @@
 </ion-header>
 
 <ion-content>
-  <ion-item>
-    <ion-label position="floating">Email</ion-label>
-    <ion-input [(ngModel)]="user.email" name="email" type="email"></ion-input>
-    <div *ngIf="errors.email"> {{ errors.email }} </div>
-  </ion-item>
-
 	<ion-item>
     <ion-label position="floating">Username</ion-label>
     <ion-input [(ngModel)]="user.username" name="username" type="text"></ion-input>
     <div *ngIf="errors.username"> {{ errors.username }} </div>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Email</ion-label>
+    <ion-input [(ngModel)]="user.email" name="email" type="email"></ion-input>
+    <div *ngIf="errors.email"> {{ errors.email }} </div>
   </ion-item>
 
   <ion-item>
